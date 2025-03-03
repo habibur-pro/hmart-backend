@@ -3,3 +3,7 @@ export enum UserStatus {
     INACTIVE = 'inactive',
     BLOCKED = 'blocked',
 }
+export enum CategoryStatus {
+    ACTIVE = 'active',
+    INACTIVE = 'inactive',
+}
