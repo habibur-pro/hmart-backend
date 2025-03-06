@@ -7,3 +7,7 @@ export enum CategoryStatus {
     ACTIVE = 'active',
     INACTIVE = 'inactive',
 }
+export enum ProductStatus {
+    ACTIVE = 'active',
+    INACTIVE = 'inactive',
+}
