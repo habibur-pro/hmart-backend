@@ -4,6 +4,7 @@ import AuthRoutes from '../modules/Auth/auth.route'
 import CategoryRoutes from '../modules/Category/category.route'
 import ProductRoutes from '../modules/Product/product.route'
 import CartRoutes from '../modules/Cart/cart.route'
+import ShippingAddressRoutes from '../modules/ShippingAddress/shippingAddress.route'
 
 const router = Router()
 const routes = [
@@ -26,6 +27,10 @@ const routes = [
     {
         path: '/carts',
         route: CartRoutes,
+    },
+    {
+        path: '/shipping-addresses',
+        route: ShippingAddressRoutes,
     },
 ]
 
