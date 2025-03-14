@@ -13,6 +13,10 @@ export type TProduct = {
     status: ProductStatus
     variants: Array<Types.ObjectId>
     images: Array<string>
+    specifications: Array<{
+        key: string
+        value: string | number | boolean | string[] | number[]
+    }>
     createdAt: Date
     updatedAt: Date
 }

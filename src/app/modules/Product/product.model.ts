@@ -47,6 +47,17 @@ const ProductSchema = new Schema<TProduct>(
             default: [],
             ref: 'productVariant',
         },
+        specifications: [
+            {
+                key: { type: String, required: true }, // Specification name, e.g., "RAM", "Color"
+                value: { type: Schema.Types.Mixed, required: true }, // Can store string, number, boolean, array, object
+                type: {
+                    type: String,
+                    enum: ['string', 'number', 'boolean', 'array', 'object'],
+                    default: null,
+                }, // Define type
+            },
+        ],
         images: {
             type: [String],
             required: [true, 'images are required'],

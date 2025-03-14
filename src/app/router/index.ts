@@ -3,6 +3,7 @@ import RoleRoutes from '../modules/Role/role.route'
 import AuthRoutes from '../modules/Auth/auth.route'
 import CategoryRoutes from '../modules/Category/category.route'
 import ProductRoutes from '../modules/Product/product.route'
+import CartRoutes from '../modules/Cart/cart.route'
 
 const router = Router()
 const routes = [
@@ -21,6 +22,10 @@ const routes = [
     {
         path: '/products',
         route: ProductRoutes,
+    },
+    {
+        path: '/carts',
+        route: CartRoutes,
     },
 ]
 
