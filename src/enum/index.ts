@@ -1,5 +1,3 @@
-import ShippingAddress from '../app/modules/ShippingAddress/shippingAddress.model'
-
 export enum UserStatus {
     ACTIVE = 'active',
     INACTIVE = 'inactive',
@@ -30,4 +28,13 @@ export enum PaymentType {
     NETBANKING = 'netbanking',
     BANK = 'bank',
     CARD = 'card',
+}
+
+export enum DiscountType {
+    FIXED = 'fixed',
+    RATE = 'rate',
+}
+export enum OfferStatus {
+    ACTIVE = 'active',
+    INACTIVE = 'inactive',
 }

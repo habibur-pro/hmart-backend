@@ -5,6 +5,8 @@ import CategoryRoutes from '../modules/Category/category.route'
 import ProductRoutes from '../modules/Product/product.route'
 import CartRoutes from '../modules/Cart/cart.route'
 import ShippingAddressRoutes from '../modules/ShippingAddress/shippingAddress.route'
+import OrderRoutes from '../modules/Order/order.route'
+import OfferRoutes from '../modules/Offer/offer.route'
 
 const router = Router()
 const routes = [
@@ -31,6 +33,14 @@ const routes = [
     {
         path: '/shipping-addresses',
         route: ShippingAddressRoutes,
+    },
+    {
+        path: '/orders',
+        route: OrderRoutes,
+    },
+    {
+        path: '/offers',
+        route: OfferRoutes,
     },
 ]
 

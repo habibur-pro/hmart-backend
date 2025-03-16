@@ -13,6 +13,14 @@ const OrderSchema = new Schema<TOrder>(
             type: String,
             default: null,
         },
+        phone: {
+            type: String,
+            required: [true, 'phone is required'],
+        },
+        email: {
+            type: String,
+            required: [true, 'email is required'],
+        },
         totalAmount: {
             type: Number,
             required: [true, 'totalAmount is required'],
@@ -61,5 +69,5 @@ OrderSchema.pre<TOrder>('validate', async function (next) {
     }
     next()
 })
-const Product = model('order', OrderSchema)
-export default Product
+const Order = model('order', OrderSchema)
+export default Order
