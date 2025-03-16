@@ -56,7 +56,9 @@ const createOrder = async (payload: TOrderCreatePayload) => {
         console.log('Total amount:', totalAmount)
 
         // Calculate final amounts
+
         const discountAmount = parseFloat(payload.discountAmount) || 0
+
         const shippingAmount = parseFloat(payload.shippingAmount) || 0
         const grossAmount = totalAmount - discountAmount
         const netAmount = grossAmount + shippingAmount
@@ -110,7 +112,7 @@ const createOrder = async (payload: TOrderCreatePayload) => {
         session.endSession()
 
         return { success: true, order }
-    } catch (error: any) {
+    } catch (error) {
         await session.abortTransaction()
         session.endSession()
         throw new ApiError(

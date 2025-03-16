@@ -1,6 +1,5 @@
 import { Types } from 'mongoose'
 import { OrderStatus, PaymentType } from '../../../enum'
-import ProductVariant from '../ProductVariant/productVariant.model'
 
 export type TOrder = {
     id: string
